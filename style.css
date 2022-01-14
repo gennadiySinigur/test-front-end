@@ -1,0 +1,247 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  width: 96%;
+  max-width: 1200px;
+  padding: 4rem 0;
+  position: relative;
+  border: 3px solid rgba(93, 93, 112, 0.43);
+  border-radius: 10px;
+  margin: 10rem auto 0;
+}
+
+.panel {
+  text-transform: uppercase;
+  font-weight: 600;
+  display: flex;
+  margin-bottom: 1.2rem;
+  position: absolute;
+  top: -2.6rem;
+  right: 1.4rem;
+}
+
+.panel_item {
+  cursor: pointer;
+  transition: all .4s ease-in;
+}
+
+.panel_item:hover,
+.panel_item:active {
+  color: rgba(212, 181, 159, 0.57) !important;
+}
+
+.panel_item + .panel_item {
+  margin-left: 1rem;
+}
+
+.fonts {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 3.6rem;
+}
+
+.primary {
+  margin-right: 3rem;
+}
+
+.fonts_roboto,
+.fonts_notosans {
+  display: flex;
+  align-items: center;
+}
+
+.fonts_roboto {
+  margin-bottom: 2.8rem;
+}
+
+.shape {
+  border-radius: 12px;
+  outline: 1px solid #141414;
+  outline-offset: 5px;
+  padding: .8rem;
+  text-align: center;
+  display: flex;
+  align-items: flex-end;
+  line-height: .8;
+  color: rgba(255, 255, 255, 0.29);
+}
+
+.merriweather_shape {
+  background-color: #04aa04;
+  width: 8rem;
+  height: 8rem;
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1.8rem;
+
+}
+
+.secondary {
+  margin-left: 2rem;
+}
+
+.secondary .shape {
+  flex-shrink: 0;
+  width: 6rem;
+  height: 6rem;
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.roboto_shape,
+.notosans_shape {
+  margin-right: 2rem;
+}
+
+.roboto_shape {
+  background-color: #f875d5;
+}
+
+.notosans_shape {
+  background-color: #546af7;
+}
+
+.text {
+  font-weight: 500;
+  position: relative;
+}
+
+.text::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: -16px;
+  width: 8px;
+  height: 8px;
+  background-color: #a5a5a5;
+  border-radius: 50px;
+}
+
+.merriweather_text {
+  margin-left: .6rem;
+}
+
+.buy {
+  padding: 6rem 10rem;
+  text-align: center;
+  display: none;
+}
+
+
+@media (max-width: 768px) {
+  .fonts {
+    padding: 0 2.4rem;
+  }
+
+  .primary {
+    margin-right: 1rem;
+  }
+
+  .shape {
+    transform: scale(.75);
+  }
+
+  .text {
+    font-size: .8rem;
+  }
+
+  .merriweather_text {
+    margin-left: 1.8rem;
+  }
+
+  .buy {
+    padding: 2rem 6rem;
+  }
+
+  .panel {
+    top: -2rem;
+    right: 1rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 590px) {
+  .fonts {
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+
+  .primary {
+    margin-right: 0;
+  }
+
+  .secondary {
+    margin-left: 0;
+  }
+
+  .shape {
+    margin: 0 auto;
+  }
+
+  .merriweather_shape {
+    margin: 0 auto;
+  }
+
+  .fonts_merriweather {
+    margin-bottom: 3rem;
+  }
+
+  .fonts_roboto,
+  .fonts_notosans {
+    display: block;
+  }
+
+  .merriweather_shape,
+  .roboto_shape,
+  .notosans_shape {
+    width: 8rem!important;
+    height: 8rem!important;
+  }
+
+  .roboto_shape,
+  .notosans_shape {
+    /*transform: scale(1);*/
+    margin-bottom: 1.2rem;
+  }
+
+  .text::before {
+    top: 3.4px;
+  }
+
+  .merriweather_text {
+    margin-left: 0;
+  }
+
+  .merriweather_text,
+  .roboto_text,
+  .notosans_text {
+    text-align: center;
+  }
+
+  .buy {
+    padding: 1rem 2rem;
+    font-size: .8rem;
+  }
+
+  .panel {
+    top: -2rem;
+    right: 1rem;
+    font-size: .95rem;
+  }
+}
+
+
+
+
+
